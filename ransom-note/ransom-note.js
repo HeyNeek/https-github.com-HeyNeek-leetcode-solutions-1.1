@@ -7,9 +7,6 @@ var canConstruct = function(ransomNote, magazine) {
     const ransomMap = new Map();
     const magazineMap = new Map();
     
-    console.log(ransomNote);
-    console.log(magazine);
-    
     for(let i = 0; i < ransomNote.length; i++){
         if(!ransomMap.has(ransomNote[i])){
             ransomMap.set(ransomNote[i], 1);
@@ -28,13 +25,7 @@ var canConstruct = function(ransomNote, magazine) {
     
     let canRansomNoteBeConstructed = true;
     
-    console.log("ransomMap: ", ransomMap);
-    console.log("magazineMap: ", magazineMap);
-    
-    for(const [key, value] of ransomMap){
-        console.log("ransomMap's key/value pair -> " + key + ": " + value);
-         console.log("magazineMap's key/value pair -> " + key + ": " + magazineMap.get(key));
-        
+    for(const [key, value] of ransomMap){ 
         if(!magazineMap.has(key)){
             canRansomNoteBeConstructed = false;
         }

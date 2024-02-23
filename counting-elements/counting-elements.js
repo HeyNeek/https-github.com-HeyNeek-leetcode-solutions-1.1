@@ -3,13 +3,12 @@
  * @return {number}
  */
 var countElements = function(arr) {
-    const sortedArr = arr.sort((a,b) => a-b);
+    
+    // const sortedArr = arr.sort((a,b) => a-b);
     let count = 0;
     const numMap = new Map();
-    
-    console.log(sortedArr);
-    
-    for(let i = 0; i < sortedArr.length; i++){
+        
+    for(let i = 0; i < arr.length; i++){
         if(!numMap.has(arr[i])){
             numMap.set(arr[i], 1);
         }else{

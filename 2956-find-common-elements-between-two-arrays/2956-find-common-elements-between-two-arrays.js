@@ -26,14 +26,12 @@ var findIntersectionValues = function(nums1, nums2) {
     let answerArr = [0,0];
     
     for(let [key, value] of numMap1){
-        // console.log(key)
         if(numMap2.has(key)){
             answerArr[0] += value;
         }
     }
     
     for(let [key, value] of numMap2){
-        // console.log(key)
         if(numMap1.has(key)){
             answerArr[1] += value;
         }

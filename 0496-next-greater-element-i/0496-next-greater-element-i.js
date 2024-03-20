@@ -22,9 +22,7 @@ var nextGreaterElement = function(nums1, nums2) {
             }
         }
     }
-    
-    console.log(rightNumGreaterThanMap);
-    
+        
     let answerArr = []
     
     for(let [key, value] of rightNumGreaterThanMap){

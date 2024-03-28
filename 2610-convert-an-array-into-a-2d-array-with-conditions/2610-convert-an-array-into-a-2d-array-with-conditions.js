@@ -12,20 +12,14 @@ var findMatrix = function(nums) {
             numMap.set(nums[i], numMap.get(nums[i]) + 1);
         }
     }
-    
-    console.log(numMap);
-    
+        
     let greatestValue = Math.max(...numMap.values());
-    
-    console.log(greatestValue);
     
     let answerArr = [];
     
     for(let i = 0; i < greatestValue; i++){
         answerArr[i] = [];
     }
-    
-    console.log(answerArr);
     
     for(let [key, value] of numMap){
         for(let i = 0; i < value; i++){
@@ -35,6 +29,5 @@ var findMatrix = function(nums) {
         }
     }
     
-    console.log(answerArr);
     return answerArr;
 };

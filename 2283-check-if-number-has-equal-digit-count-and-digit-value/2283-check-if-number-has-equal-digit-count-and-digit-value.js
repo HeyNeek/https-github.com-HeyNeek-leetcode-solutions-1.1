@@ -19,12 +19,7 @@ var digitCount = function(num) {
         const currNum = numMap.get(String(i));
         const currentIndexValue = Number(num[i]);
         
-        console.log("index: ", i)
-        console.log("currNum: ", currNum)
-        
         if(currNum !== currentIndexValue && currNum !== undefined){
-            console.log("we are inside the if with index: ", i)
-            console.log("we in here because " + currNum + " does not equal " + currentIndexValue)
             bool = false;
             break;
         }
@@ -33,10 +28,7 @@ var digitCount = function(num) {
             bool = false;
             break;
         }
-    }
-    
-    console.log(numMap);
-    
+    }    
     
     return bool;
 };

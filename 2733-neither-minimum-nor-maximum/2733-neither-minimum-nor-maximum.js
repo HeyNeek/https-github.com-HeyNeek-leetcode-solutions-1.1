@@ -3,14 +3,14 @@
  * @return {number}
  */
 var findNonMinOrMax = function(nums) {
-    let sortedArr = nums.sort((a,b) => a-b);
+    // let sortedArr = nums.sort((a,b) => a-b);
     
-    let min = sortedArr[0];
-    let max = sortedArr[sortedArr.length - 1];
+    let min = Math.min(...nums);
+    let max = Math.max(...nums);
     
-    for(let i = 0; i < sortedArr.length; i++){
-        if(sortedArr[i] !== min && sortedArr[i] !== max){
-            return sortedArr[i];
+    for(let i = 0; i < nums.length; i++){
+        if(nums[i] !== min && nums[i] !== max){
+            return nums[i];
         }
     }
     

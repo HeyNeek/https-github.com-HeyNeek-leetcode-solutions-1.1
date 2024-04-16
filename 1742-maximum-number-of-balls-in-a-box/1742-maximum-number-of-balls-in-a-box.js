@@ -19,18 +19,14 @@ var countBalls = function(lowLimit, highLimit) {
             }
             currentSum = runningTotal;
         }
-        
-        // console.log("currentSum: ", currentSum);
-        
+                
         if(!numMap.has(currentSum)){
             numMap.set(currentSum, 1);
         }else{
             numMap.set(currentSum, numMap.get(currentSum) + 1);
         }
     }
-    
-    // console.log(numMap);
-    
+        
     let greatestNumOfBalls = 0;
     
     for(let [key, value] of numMap){

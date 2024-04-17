@@ -3,10 +3,7 @@
  * @param {number} target
  * @return {number}
  */
-var searchInsert = function(nums, target) {
-//     let lesserThanBeginning = false;
-//     let greaterThanEnd = false;
-    
+var searchInsert = function(nums, target) { 
     if(!nums.includes(target)){
         if(target < nums[0]){
             return 0;    

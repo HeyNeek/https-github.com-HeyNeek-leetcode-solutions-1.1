@@ -13,20 +13,6 @@ var countPrefixes = function(words, s) {
         prefixDictionary.set(ongoingString, 0);
     }
     
-//     for(let i = 0; i < words.length; i++){
-//         if(prefixDictionary.has(words[i])){
-//             prefixDictionary.set(words[i], prefixDictionary.get(words[i]) + 1);
-//         }
-//     }
-    
-//     let totalPrefixCount = 0;
-    
-//     for(let [key, value] of prefixDictionary){
-//         totalPrefixCount += value;
-//     }
-    
-//     return totalPrefixCount;
-    
     let totalPrefixCount = 0;
     
     for(let i = 0; i < words.length; i++){

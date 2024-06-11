@@ -14,9 +14,6 @@ var numberGame = function(nums) {
 
       answerArr.push(...bobSplicedNum);
       answerArr.push(...aliceSplicedNum);
-
-      // console.log("nums: ", sortedNumsArr);
-      // console.log("answerArr: ", answerArr);
     }
     
     return answerArr;

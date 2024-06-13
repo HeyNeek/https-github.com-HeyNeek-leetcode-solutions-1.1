@@ -16,8 +16,6 @@ var minimumChairs = function(s) {
             minimumChairCount--;
             answerArr.push(minimumChairCount);
         }
-        
-        console.log("chair count: " , minimumChairCount)
     }
     
     return Math.max(...answerArr);
